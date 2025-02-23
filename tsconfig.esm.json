@@ -1,8 +1,10 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "module": "esnext",
-    "outDir": "./dist/esm",
-    "declaration": false
+    "module": "ESNext",
+    "outDir": "dist/esm",
+    "target": "ES2017",
+    "moduleResolution": "node",
+    "esModuleInterop": true
   }
 }

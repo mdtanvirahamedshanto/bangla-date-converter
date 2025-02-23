@@ -9,6 +9,9 @@ export interface BanglaDate {
     hour?: number;
     minute?: number;
     second?: number;
+    isLeapYear?: boolean;
+    dayOfYear?: number;
+    weekOfYear?: number;
 }
 
 export interface DateConverterOptions {
@@ -17,6 +20,9 @@ export interface DateConverterOptions {
     showWeekDay?: boolean;
     showTime?: boolean;
     timeFormat?: '12h' | '24h';
+    showDayOfYear?: boolean;
+    showWeekOfYear?: boolean;
+    showIsLeapYear?: boolean;
 }
 
 export interface FormattedDateOptions {
@@ -29,6 +35,11 @@ export interface FormattedDateOptions {
     relative?: boolean;
     shortMonth?: boolean;
     shortWeekDay?: boolean;
+    customFormat?: {
+        dayOfYear?: string;
+        weekOfYear?: string;
+        isLeapYear?: string;
+    };
 }
 
 export class DateValidationError extends Error {

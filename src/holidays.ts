@@ -15,10 +15,10 @@ export const banglaHolidays: BanglaHoliday[] = [
         description: 'বাংলা নববর্ষ'
     },
     {
-        date: '1-6',
-        name: 'ষষ্ঠী',
-        type: 'religious',
-        description: 'দুর্গাপূজার ষষ্ঠী'
+        date: '21-2',
+        name: 'শহীদ দিবস',
+        type: 'national',
+        description: 'আন্তর্জাতিক মাতৃভাষা দিবস'
     },
     {
         date: '26-3',
@@ -28,9 +28,45 @@ export const banglaHolidays: BanglaHoliday[] = [
     },
     {
         date: '14-4',
-        name: 'পহেলা বৈশাখ',
+        name: 'বাংলা নববর্ষ',
         type: 'cultural',
-        description: 'বাংলা নববর্ষ'
+        description: 'পহেলা বৈশাখ'
+    },
+    {
+        date: '1-5',
+        name: 'মে দিবস',
+        type: 'national',
+        description: 'আন্তর্জাতিক শ্রমিক দিবস'
+    },
+    {
+        date: '15-8',
+        name: 'জাতীয় শোক দিবস',
+        type: 'national',
+        description: 'বঙ্গবন্ধু শেখ মুজিবুর রহমানের শাহাদাত বার্ষিকী'
+    },
+    {
+        date: '16-12',
+        name: 'বিজয় দিবস',
+        type: 'national',
+        description: 'বাংলাদেশের মহান বিজয় দিবস'
+    },
+    {
+        date: '6-7',
+        name: 'ষষ্ঠী',
+        type: 'religious',
+        description: 'দুর্গাপূজার ষষ্ঠী'
+    },
+    {
+        date: '7-7',
+        name: 'সপ্তমী',
+        type: 'religious',
+        description: 'দুর্গাপূজার সপ্তমী'
+    },
+    {
+        date: '8-7',
+        name: 'অষ্টমী',
+        type: 'religious',
+        description: 'দুর্গাপূজার অষ্টমী'
     }
 ];
 
