@@ -1,7 +1,6 @@
 # Bangla Date Converter
 
 [![npm version](https://img.shields.io/npm/v/bangla-date-converter.svg)](https://www.npmjs.com/package/bangla-date-converter)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![npm](https://img.shields.io/npm/v/bangla-date-converter)
 ![typescript](https://img.shields.io/badge/TypeScript-Ready-blue)
 
