@@ -182,4 +182,4 @@ If you find this package helpful, please consider giving it a star on GitHub! Fo
 
 ---
 
-Made with ❤️ by Md Tanvir Ahamed Shanto for the Bangla community
+Made with ❤️ by [Md Tanvir Ahamed Shanto](https://mdtanvirahamedshanto.vercel.app/) for the Bangla community
