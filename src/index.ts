@@ -1,6 +1,7 @@
 import { BanglaDate, DateConverterOptions, FormattedDateOptions, DateValidationError } from './types';
 import { Constants } from './constants';
 import { isLeapYear, toBanglaNumeral, toEnglishNumeral } from './utils';
+import { BanglaHoliday, getHolidaysByMonth, getHolidaysByType, getUpcomingHolidays } from './holidays';
 
 export class BanglaDateConverter {
     private date: Date;
@@ -46,6 +47,19 @@ export class BanglaDateConverter {
 
     public subtract(years: number = 0, months: number = 0, days: number = 0): BanglaDateConverter {
         return this.add(-years, -months, -days);
+    }
+
+    public getHolidays(): BanglaHoliday[] {
+        const banglaDate = this.getBanglaDate();
+        return getHolidaysByMonth(banglaDate.monthIndex + 1);
+    }
+
+    public getUpcomingHolidays(count: number = 5): BanglaHoliday[] {
+        return getUpcomingHolidays(this.date, count);
+    }
+
+    public getHolidaysByType(type: BanglaHoliday['type']): BanglaHoliday[] {
+        return getHolidaysByType(type);
     }
 
     constructor(date: Date = new Date()) {

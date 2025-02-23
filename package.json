@@ -2,13 +2,27 @@
   "name": "bangla-date-converter",
   "version": "1.0.0",
   "description": "A comprehensive Bangla (Bengali) date converter with extensive formatting options",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "mdtanvirahamedshanto/bangla-date-converter.git"
+  },
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:types": "tsc -p tsconfig.types.json",
     "test": "jest",
-    "prepare": "npm run build",
-    "start": "ts-node src/index.ts"
+    "prepare": "npm run build"
   },
   "keywords": [
     "bangla",
@@ -18,7 +32,7 @@
     "converter",
     "bangladesh"
   ],
-  "author": "Your Name",
+  "author": "Md Tanvir Ahamed Shanto",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.11",
