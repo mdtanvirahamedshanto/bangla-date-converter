@@ -1,10 +1,10 @@
 {
   "name": "bangla-date-converter",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "A comprehensive Bangla (Bengali) date converter with extensive formatting options",
   "repository": {
     "type": "git",
-    "url": "mdtanvirahamedshanto/bangla-date-converter.git"
+    "url": "https://github.com/mdtanvirahamedshanto/bangla-date-converter.git"
   },
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
